@@ -10,7 +10,8 @@ namespace SanchezExamen
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //Navegación entre ventanas
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

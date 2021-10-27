@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SanchezExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#215178" Padding="10" CornerRadius="0">
+                <Label Text="Resumen Inscripción" HorizontalTextAlignment="Center" TextColor="White" FontSize="14"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario Conectado:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold"/>
+                <Label x:Name="txtUsuarioConectado" Grid.Row="0" Grid.Column="1" FontSize="Small" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Nombre:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold"/>
+                <Label x:Name="txtNombre" Grid.Row="1" Grid.Column="1" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                
+                <Label Text="Total a Pagar:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold"/>
+                <Label x:Name="txtTotalPagar" Grid.Row="2" Grid.Column="1" FontSize="Small" HorizontalTextAlignment="Center"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

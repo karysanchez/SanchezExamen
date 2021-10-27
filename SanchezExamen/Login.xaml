@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SanchezExamen.Login">
+
+    <StackLayout>
+        <Frame BackgroundColor="#215178" Padding="20" CornerRadius="0">
+            <Label Text="Cursos Online Login" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+        </Frame>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario" MaxLength="14" />
+        <Entry x:Name="txtClave" Placeholder="Ingrese la clave" IsPassword="True" MaxLength="11"/>
+
+        <Button x:Name="btnAcceder" Text="Ingresar" Clicked="btnAcceder_Clicked" BackgroundColor="#1F82F0" FontAttributes="Bold" WidthRequest="100" HorizontalOptions="Center"/>
+
+
+    </StackLayout>
+
+</ContentPage>
