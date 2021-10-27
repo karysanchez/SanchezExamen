@@ -19,6 +19,7 @@ namespace SanchezExamen
             //se le carga los datos para mostrar
             txtUsuarioConectado.Text = usuario;
             txtNombre.Text = nombre;
+            
             txtTotalPagar.Text = totalPagar.ToString();
 
         }

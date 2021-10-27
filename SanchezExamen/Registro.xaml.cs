@@ -59,6 +59,7 @@ namespace SanchezExamen
             try
             {
                 double totalPagoMensualCalculado = Convert.ToDouble(txtPagoMensual.Text);
+                double totalPagar = totalPagoMensualCalculado * 3;
 
                 string usuarioEnviar = lblUsuario.Text;
                 string nombreEnviar = txtNombre.Text;
@@ -67,7 +68,7 @@ namespace SanchezExamen
                 if (totalPagoMensualCalculado > 0)
                 {
                     //Permite abrir la ventana  (viewDos) 
-                    await Navigation.PushAsync(new Resumen(usuarioEnviar, nombreEnviar, totalPagoMensualCalculado));
+                    await Navigation.PushAsync(new Resumen(usuarioEnviar, nombreEnviar, totalPagar));
 
                     await DisplayAlert("MENSAJE", "Elemento Guardado con éxito", "ok");
                 }
